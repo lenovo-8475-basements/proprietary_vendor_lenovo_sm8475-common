@@ -150,7 +150,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/sm8475-common/proprietary/vendor/etc/seccomp_policy/wfdhdcphalservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/wfdhdcphalservice.policy \
     vendor/lenovo/sm8475-common/proprietary/vendor/etc/seccomp_policy/wfdvndservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/wfdvndservice.policy \
     vendor/lenovo/sm8475-common/proprietary/vendor/etc/seccomp_policy/wifidisplayhalservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/wifidisplayhalservice.policy \
-    vendor/lenovo/sm8475-common/proprietary/vendor/etc/snapdragon_color_libs_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/snapdragon_color_libs_config.xml \
     vendor/lenovo/sm8475-common/proprietary/vendor/etc/ssg/ta_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/ta_config.json \
     vendor/lenovo/sm8475-common/proprietary/vendor/etc/ssg/tz_whitelist.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/tz_whitelist.json \
     vendor/lenovo/sm8475-common/proprietary/vendor/etc/wfdconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/wfdconfig.xml \
@@ -323,7 +322,6 @@ PRODUCT_PACKAGES += \
     libmemutils \
     libminkdescriptor \
     libminksocket_vendor \
-    libmm-hdcpmgr \
     libmmosal_vendor \
     libmmrtpdecoder_vendor \
     libmmrtpencoder_vendor \
@@ -401,7 +399,6 @@ PRODUCT_PACKAGES += \
     libqmiservices \
     libqppe \
     libqrtr \
-    libqrtrclient \
     libqseed3 \
     libqsocket \
     libqtikeymaster4 \
@@ -556,7 +553,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.qccsyshal@1.1 \
     vendor.qti.hardware.qccvndhal@1.0 \
     vendor.qti.hardware.qconfig@1.0 \
-    vendor.qti.hardware.qdutils_disp@1.0 \
     vendor.qti.hardware.qseecom@1.0 \
     vendor.qti.hardware.qteeconnector@1.0 \
     vendor.qti.hardware.radio.am@1.0 \

@@ -3743,6 +3743,7 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "libdisplaydebug",
                 "libtinyxml2_1",
+                "libbase",
                 "libc++",
                 "libc",
                 "libm",
@@ -3823,6 +3824,7 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libutils",
                 "libdisplaydebug",
+                "libsdmutils",
                 "libc++",
                 "libc",
                 "libm",
@@ -3886,7 +3888,7 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libbinder",
                 "libdrm",
-                "libtinyxml2_1",
+                "libtinyxml2-v34",
                 "libdisplaydebug",
                 "libhidlbase",
                 "android.frameworks.sensorservice@1.0",
@@ -4963,33 +4965,6 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libqrtr",
                 "libvmmem",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libmm-hdcpmgr",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libmm-hdcpmgr.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libutils",
-                "libcutils",
                 "libc++",
                 "libc",
                 "libm",
@@ -7352,36 +7327,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libqrtrclient",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libqrtrclient.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libutils",
-                "libdisplaydebug",
-                "libqrtr",
-                "libsdmutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libqseed3",
     owner: "lenovo",
     strip: {
@@ -7833,6 +7778,7 @@ cc_prebuilt_library_shared {
                 "libtestutils",
                 "libcrypto",
                 "libssl",
+                "libbase",
                 "libc++",
                 "libc",
                 "libm",
@@ -8117,7 +8063,7 @@ cc_prebuilt_library_shared {
                 "libdisplaydebug",
                 "libsdm-color",
                 "libbinder",
-                "libtinyxml2_1",
+                "libtinyxml2-v34",
                 "libsdmutils",
                 "libdrm",
                 "libdigital-dimming",
@@ -11986,34 +11932,6 @@ cc_prebuilt_library_shared {
         android_arm64: {
             srcs: [
                 "proprietary/vendor/lib64/vendor.qti.hardware.qconfig@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.qdutils_disp@1.0",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so",
             ],
             shared_libs: [
                 "libhidlbase",
