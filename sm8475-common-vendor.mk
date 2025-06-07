@@ -168,33 +168,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/sm8475-common/proprietary/vendor/etc/pwr/StandbyFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/pwr/StandbyFeature.xml \
     vendor/lenovo/sm8475-common/proprietary/vendor/etc/pwr/VendorScenarioPowerOptFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/pwr/VendorScenarioPowerOptFeature.xml \
     vendor/lenovo/sm8475-common/proprietary/vendor/etc/pwr/VideoPowerOptFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/pwr/VideoPowerOptFeature.xml \
-    vendor/lenovo/sm8475-common/proprietary/vendor/etc/qvr/cfg/339/0/65536/mtp855.txt:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/cfg/339/0/65536/mtp855.txt \
-    vendor/lenovo/sm8475-common/proprietary/vendor/etc/qvr/cfg/339/0/65536/mtp855_6dof_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/cfg/339/0/65536/mtp855_6dof_config.xml \
-    vendor/lenovo/sm8475-common/proprietary/vendor/etc/qvr/cfg/356/0/65536/mtp865.txt:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/cfg/356/0/65536/mtp865.txt \
-    vendor/lenovo/sm8475-common/proprietary/vendor/etc/qvr/cfg/356/0/65536/mtp865_6dof_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/cfg/356/0/65536/mtp865_6dof_config.xml \
-    vendor/lenovo/sm8475-common/proprietary/vendor/etc/qvr/cfg/356/1/131072/morpheus.txt:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/cfg/356/1/131072/morpheus.txt \
-    vendor/lenovo/sm8475-common/proprietary/vendor/etc/qvr/cfg/356/1/131072/morpheus_6dof_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/cfg/356/1/131072/morpheus_6dof_config.xml \
-    vendor/lenovo/sm8475-common/proprietary/vendor/etc/qvr/cfg/356/1/65536/trinity.txt:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/cfg/356/1/65536/trinity.txt \
-    vendor/lenovo/sm8475-common/proprietary/vendor/etc/qvr/cfg/356/1/65536/trinity_6dof_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/cfg/356/1/65536/trinity_6dof_config.xml \
-    vendor/lenovo/sm8475-common/proprietary/vendor/etc/qvr/cfg/415/0/131072/mtplahaina.txt:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/cfg/415/0/131072/mtplahaina.txt \
-    vendor/lenovo/sm8475-common/proprietary/vendor/etc/qvr/cfg/415/0/131072/mtplahaina_6dof_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/cfg/415/0/131072/mtplahaina_6dof_config.xml \
-    vendor/lenovo/sm8475-common/proprietary/vendor/etc/qvr/cfg/415/0/65536/mtplahaina.txt:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/cfg/415/0/65536/mtplahaina.txt \
-    vendor/lenovo/sm8475-common/proprietary/vendor/etc/qvr/cfg/415/0/65536/mtplahaina_6dof_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/cfg/415/0/65536/mtplahaina_6dof_config.xml \
-    vendor/lenovo/sm8475-common/proprietary/vendor/etc/qvr/cfg/457/0/65536/mtpwaipio.txt:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/cfg/457/0/65536/mtpwaipio.txt \
-    vendor/lenovo/sm8475-common/proprietary/vendor/etc/qvr/cfg/457/0/65536/mtpwaipio_6dof_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/cfg/457/0/65536/mtpwaipio_6dof_config.xml \
-    vendor/lenovo/sm8475-common/proprietary/vendor/etc/qvr/cfg/457/0/65536/mtpwaipio_qvr_3dof_tracker_config.txt:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/cfg/457/0/65536/mtpwaipio_qvr_3dof_tracker_config.txt \
-    vendor/lenovo/sm8475-common/proprietary/vendor/etc/qvr/cfg/457/0/65537/mtpwaipio.txt:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/cfg/457/0/65537/mtpwaipio.txt \
-    vendor/lenovo/sm8475-common/proprietary/vendor/etc/qvr/cfg/457/0/65537/mtpwaipio_6dof_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/cfg/457/0/65537/mtpwaipio_6dof_config.xml \
-    vendor/lenovo/sm8475-common/proprietary/vendor/etc/qvr/cfg/457/0/65537/mtpwaipio_qvr_3dof_tracker_config.txt:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/cfg/457/0/65537/mtpwaipio_qvr_3dof_tracker_config.txt \
-    vendor/lenovo/sm8475-common/proprietary/vendor/etc/qvr/cfg/457/3/65536/mtpwaipio.txt:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/cfg/457/3/65536/mtpwaipio.txt \
-    vendor/lenovo/sm8475-common/proprietary/vendor/etc/qvr/cfg/457/3/65536/mtpwaipio_6dof_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/cfg/457/3/65536/mtpwaipio_6dof_config.xml \
-    vendor/lenovo/sm8475-common/proprietary/vendor/etc/qvr/cfg/457/3/65536/mtpwaipio_qvr_3dof_tracker_config.txt:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/cfg/457/3/65536/mtpwaipio_qvr_3dof_tracker_config.txt \
-    vendor/lenovo/sm8475-common/proprietary/vendor/etc/qvr/cfg/457/3/65537/mtpwaipio.txt:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/cfg/457/3/65537/mtpwaipio.txt \
-    vendor/lenovo/sm8475-common/proprietary/vendor/etc/qvr/cfg/457/3/65537/mtpwaipio_6dof_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/cfg/457/3/65537/mtpwaipio_6dof_config.xml \
-    vendor/lenovo/sm8475-common/proprietary/vendor/etc/qvr/cfg/457/3/65537/mtpwaipio_qvr_3dof_tracker_config.txt:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/cfg/457/3/65537/mtpwaipio_qvr_3dof_tracker_config.txt \
-    vendor/lenovo/sm8475-common/proprietary/vendor/etc/qvr/qvr_hid_device_list.txt:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/qvr_hid_device_list.txt \
-    vendor/lenovo/sm8475-common/proprietary/vendor/etc/qvr/qvr_usb_device_list.txt:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/qvr_usb_device_list.txt \
-    vendor/lenovo/sm8475-common/proprietary/vendor/etc/qvr/qvrservice_config.txt:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/qvrservice_config.txt \
     vendor/lenovo/sm8475-common/proprietary/vendor/etc/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config \
     vendor/lenovo/sm8475-common/proprietary/vendor/etc/seccomp_policy/codec2.vendor.base-arm64.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.base-arm64.policy \
     vendor/lenovo/sm8475-common/proprietary/vendor/etc/seccomp_policy/codec2.vendor.ext-arm64.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.ext-arm64.policy \
@@ -204,7 +177,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/sm8475-common/proprietary/vendor/etc/seccomp_policy/qesdk.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qesdk.policy \
     vendor/lenovo/sm8475-common/proprietary/vendor/etc/seccomp_policy/qspm.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qspm.policy \
     vendor/lenovo/sm8475-common/proprietary/vendor/etc/seccomp_policy/qti-systemd.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qti-systemd.policy \
-    vendor/lenovo/sm8475-common/proprietary/vendor/etc/seccomp_policy/qvr@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qvr@2.0.policy \
     vendor/lenovo/sm8475-common/proprietary/vendor/etc/seccomp_policy/sensors-qesdk.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/sensors-qesdk.policy \
     vendor/lenovo/sm8475-common/proprietary/vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/vendor.qti.hardware.dsp.policy \
     vendor/lenovo/sm8475-common/proprietary/vendor/etc/seccomp_policy/wfdhdcphalservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/wfdhdcphalservice.policy \
@@ -334,7 +306,6 @@ PRODUCT_PACKAGES += \
     libAlacSwDec \
     libApeSwDec \
     libCB \
-    libDspIOProxy_stub \
     libEvrcSwCodec \
     libFileMux_proprietary \
     libFlacSwDec \
@@ -342,14 +313,11 @@ PRODUCT_PACKAGES += \
     libGPTEE_vendor \
     libGPreqcancel \
     libGPreqcancel_svc \
-    libMapService \
     libOpenCL \
     libQSEEComAPI \
     libQTEEConnector_listener \
     libQTEEConnector_vendor \
     libQcelp13SwCodec \
-    libScenescape \
-    libStereoRectifyWrapper \
     libTouchInputVM \
     libTrustedInput \
     libTrustedInputTZ \
@@ -411,14 +379,12 @@ PRODUCT_PACKAGES += \
     libesesbprovision \
     libeva \
     libeva_util \
-    libeye_tracking_dsp_sample_stub \
     libfastcvdsp_stub \
     libfastcvopt \
     libgame_enhance \
     libgps.utils \
     libgpudataproducer \
     libgsl \
-    libhalide_hexagon_host \
     libhdr10plus \
     libhdr_backlight_adapter \
     libhdr_stub \
@@ -552,14 +518,6 @@ PRODUCT_PACKAGES += \
     libqti-utils \
     libqtikeymaster4 \
     libqtikeymint \
-    libqtr_sdk \
-    libqvr_cam_cdsp_driver_stub \
-    libqvr_cdsp_driver_stub \
-    libqvr_eyetracking_plugin \
-    libqvr_hostcontroller_plugin \
-    libqvrcamera_client.qti \
-    libqvrservice \
-    libqvrservice_client.qti \
     librcc \
     librcmask \
     libreffeature \
@@ -609,7 +567,6 @@ PRODUCT_PACKAGES += \
     libthermalclient \
     libtime_genoff \
     libtinyxml2_1 \
-    libtracker_6dof_impl \
     libtrustedapploader \
     libtzdrmgenprov \
     libvendorscenariopoweroptfeature \
@@ -724,7 +681,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.qdutils_disp@1.0 \
     vendor.qti.hardware.qseecom@1.0 \
     vendor.qti.hardware.qteeconnector@1.0 \
-    vendor.qti.hardware.qxr-V1-ndk_platform \
     vendor.qti.hardware.radio.am@1.0 \
     vendor.qti.hardware.radio.atcmdfwd@1.0 \
     vendor.qti.hardware.radio.ims@1.0 \
@@ -910,8 +866,6 @@ PRODUCT_PACKAGES += \
     qrtr-ns \
     qseecomd \
     qti \
-    qvrdatalogger \
-    qvrservicetest64 \
     rmt_storage \
     sensors.qti \
     shsusrd \
