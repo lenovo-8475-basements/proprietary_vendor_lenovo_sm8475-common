@@ -6,6 +6,7 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/lenovo/sm8475-common
 
 PRODUCT_COPY_FILES += \
+    vendor/lenovo/sm8475-common/proprietary/odm/ueventd.rc:$(TARGET_COPY_OUT_ODM)/ueventd.rc \
     vendor/lenovo/sm8475-common/proprietary/system/etc/sysconfig/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml \
     vendor/lenovo/sm8475-common/proprietary/system_ext/etc/permissions/qti_libpermissions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qti_libpermissions.xml \
     vendor/lenovo/sm8475-common/proprietary/system_ext/etc/permissions/qti_permissions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qti_permissions.xml \
