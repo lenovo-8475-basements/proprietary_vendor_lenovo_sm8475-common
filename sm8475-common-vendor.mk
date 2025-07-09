@@ -257,6 +257,26 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/sm8475-common/proprietary/vendor/gpu/kbc/unified_ksqs.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_ksqs.bin
 
 PRODUCT_PACKAGES += \
+    eglSubDriverAndroid \
+    libEGL_adreno \
+    libGLESv1_CM_adreno \
+    libGLESv2_adreno \
+    libVkLayer_ADRENO_qprofiler \
+    libq3dtools_adreno \
+    libq3dtools_esx \
+    libCB \
+    libOpenCL \
+    libadreno_app_profiles \
+    libadreno_utils \
+    libgpudataproducer \
+    libgsl \
+    libkcl \
+    libkernelmanager \
+    libllvm-glnext \
+    libllvm-qcom \
+    libllvm-qgl \
+    libvmmem \
+    vendor.qti.qspmhal@1.0 \
     btaudio_offload_if \
     com.qualcomm.qti.dpm.api@1.0 \
     com.qualcomm.qti.imscmservice@1.0 \
@@ -267,13 +287,6 @@ PRODUCT_PACKAGES += \
     com.qualcomm.qti.uceservice@2.1 \
     com.qualcomm.qti.uceservice@2.2 \
     com.qualcomm.qti.uceservice@2.3 \
-    eglSubDriverAndroid \
-    libEGL_adreno \
-    libGLESv1_CM_adreno \
-    libGLESv2_adreno \
-    libVkLayer_ADRENO_qprofiler \
-    libq3dtools_adreno \
-    libq3dtools_esx \
     ftm_fm_lib \
     android.hardware.bluetooth@1.0-impl-qti \
     android.hardware.gatekeeper@1.0-impl-qti \
@@ -306,7 +319,6 @@ PRODUCT_PACKAGES += \
     lib-rtpsl \
     libAlacSwDec \
     libApeSwDec \
-    libCB \
     libEvrcSwCodec \
     libFileMux_proprietary \
     libFlacSwDec \
@@ -314,7 +326,6 @@ PRODUCT_PACKAGES += \
     libGPTEE_vendor \
     libGPreqcancel \
     libGPreqcancel_svc \
-    libOpenCL \
     libQSEEComAPI \
     libQTEEConnector_listener \
     libQTEEConnector_vendor \
@@ -327,8 +338,6 @@ PRODUCT_PACKAGES += \
     libTrustedUITZ \
     libTrustedUIVM \
     libadaptlaunch \
-    libadreno_app_profiles \
-    libadreno_utils \
     libadsp_default_listener \
     libadsprpc \
     libapengine \
@@ -384,25 +393,18 @@ PRODUCT_PACKAGES += \
     libfastcvopt \
     libgame_enhance \
     libgps.utils \
-    libgpudataproducer \
-    libgsl \
     libhdr10plus \
     libhdr_backlight_adapter \
     libhdr_stub \
     libhdr_tm \
     libidl \
     libjnihelper \
-    libkcl \
-    libkernelmanager \
     libkeymasterdeviceutils \
     libkeymasterprovision \
     libkeymasterutils \
     liblearningmodule \
     liblightninglaunches \
     liblistensoundmodel2vendor \
-    libllvm-glnext \
-    libllvm-qcom \
-    libllvm-qgl \
     liblmthermallistner \
     liblmutils-ns \
     libloc_core \
@@ -577,7 +579,6 @@ PRODUCT_PACKAGES += \
     libvideooptfeature \
     libvideotxr \
     libvideoutils \
-    libvmmem \
     libvppclient \
     libvppcommon \
     libvpphcp \
@@ -761,7 +762,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.qesdhal@1.1 \
     vendor.qti.qesdsys-V1-ndk_platform \
     vendor.qti.qspmhal@1.0-impl \
-    vendor.qti.qspmhal@1.0 \
     lib-imsvideocodec \
     lib-imsvt \
     lib-imsvtextutils \
@@ -894,6 +894,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     system_ext_priv-app_ims_lib_arm64_libimscamera_jni_so \
     system_ext_priv-app_ims_lib_arm64_libimsmedia_jni_so \
+    vendor_lib_libEGL_adreno_so \
+    vendor_lib_libGLESv2_adreno_so \
+    vendor_lib_libq3dtools_adreno_so \
     vendor_lib64_libEGL_adreno_so \
     vendor_lib64_libGLESv2_adreno_so \
     vendor_lib64_libq3dtools_adreno_so
