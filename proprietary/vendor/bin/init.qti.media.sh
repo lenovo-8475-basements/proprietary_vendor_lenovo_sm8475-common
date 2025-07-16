@@ -63,12 +63,15 @@ case "$target" in
             setprop vendor.media.target_variant "_parrot_v1"
         fi
 
-        if [ $build_codename -le "13" ]; then
+        if [ $build_codename -le "15" ]; then
             setprop vendor.netflix.bsp_rev "Q6450-36256-1"
         fi
         ;;
     "taro")
-        setprop vendor.mm.target.enable.qcom_parser 16776959
+        #START Asphalt-V by yangzhen18 for jiraID OASPHALTV-1246 MctsMediaV2TestCases
+        #setprop vendor.mm.target.enable.qcom_parser 16776959
+        setprop vendor.mm.target.enable.qcom_parser 16563967
+        #END Asphalt-V by yangzhen18 for jiraID OASPHALTV-1246 MctsMediaV2TestCases
         case "$soc_hwid" in
             506|547|564)
                 setprop vendor.media.target_variant "_diwali_v2"
@@ -80,7 +83,7 @@ case "$target" in
                     setprop vendor.media.target_variant "_diwali_v1"
                 fi
 
-                if [ $build_codename -le "13" ]; then
+                if [ $build_codename -le "15" ]; then
                     setprop vendor.netflix.bsp_rev "Q7450-35705-1"
                 fi
                 ;;
@@ -89,13 +92,13 @@ case "$target" in
                 ;;
             530|531|540)
                 setprop vendor.media.target_variant "_cape"
-                if [ $build_codename -le "13" ]; then
+                if [ $build_codename -le "15" ]; then
                     setprop vendor.netflix.bsp_rev "Q8450-34634-1"
                 fi
                 ;;
             *)
                 setprop vendor.media.target_variant "_taro"
-                if [ $build_codename -le "13" ]; then
+                if [ $build_codename -le "15" ]; then
                     setprop vendor.netflix.bsp_rev "Q8450-34634-1"
                 fi
                 ;;

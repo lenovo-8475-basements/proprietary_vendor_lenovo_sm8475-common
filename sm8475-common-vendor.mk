@@ -7,7 +7,6 @@ PRODUCT_SOONG_NAMESPACES += \
 
 PRODUCT_COPY_FILES += \
     vendor/lenovo/sm8475-common/proprietary/odm/ueventd.rc:$(TARGET_COPY_OUT_ODM)/ueventd.rc \
-    vendor/lenovo/sm8475-common/proprietary/system/etc/sysconfig/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml \
     vendor/lenovo/sm8475-common/proprietary/system_ext/etc/permissions/qti_libpermissions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qti_libpermissions.xml \
     vendor/lenovo/sm8475-common/proprietary/system_ext/etc/permissions/qti_permissions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qti_permissions.xml \
     vendor/lenovo/sm8475-common/proprietary/system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml \
@@ -78,7 +77,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/sm8475-common/proprietary/vendor/etc/init/dpmQmiMgr.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dpmQmiMgr.rc \
     vendor/lenovo/sm8475-common/proprietary/vendor/etc/init/feature_enabler_client.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/feature_enabler_client.rc \
     vendor/lenovo/sm8475-common/proprietary/vendor/etc/init/hw/init.qti.kernel.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.qti.kernel.rc \
-    vendor/lenovo/sm8475-common/proprietary/vendor/etc/init/hw/init.target.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.target.rc \
     vendor/lenovo/sm8475-common/proprietary/vendor/etc/init/ims_rtp_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ims_rtp_daemon.rc \
     vendor/lenovo/sm8475-common/proprietary/vendor/etc/init/imsdaemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/imsdaemon.rc \
     vendor/lenovo/sm8475-common/proprietary/vendor/etc/init/init.qdmastats.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qdmastats.rc \
@@ -185,7 +183,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/sm8475-common/proprietary/vendor/etc/snapdragon_color_libs_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/snapdragon_color_libs_config.xml \
     vendor/lenovo/sm8475-common/proprietary/vendor/etc/ssg/ta_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/ta_config.json \
     vendor/lenovo/sm8475-common/proprietary/vendor/etc/ssg/tz_whitelist.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/tz_whitelist.json \
-    vendor/lenovo/sm8475-common/proprietary/vendor/etc/telephony_packages.xml:$(TARGET_COPY_OUT_VENDOR)/etc/telephony_packages.xml \
     vendor/lenovo/sm8475-common/proprietary/vendor/etc/wfdconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/wfdconfig.xml \
     vendor/lenovo/sm8475-common/proprietary/vendor/etc/wifi/icm.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/icm.conf \
     vendor/lenovo/sm8475-common/proprietary/vendor/etc/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
@@ -194,58 +191,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/sm8475-common/proprietary/vendor/etc/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
     vendor/lenovo/sm8475-common/proprietary/vendor/etc/xtra_root_cert.pem:$(TARGET_COPY_OUT_VENDOR)/etc/xtra_root_cert.pem \
     vendor/lenovo/sm8475-common/proprietary/vendor/etc/xtwifi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/xtwifi.conf \
-    vendor/lenovo/sm8475-common/proprietary/vendor/firmware/a730_sqe.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a730_sqe.fw \
-    vendor/lenovo/sm8475-common/proprietary/vendor/firmware/a730_zap.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/a730_zap.b00 \
-    vendor/lenovo/sm8475-common/proprietary/vendor/firmware/a730_zap.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/a730_zap.b01 \
-    vendor/lenovo/sm8475-common/proprietary/vendor/firmware/a730_zap.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/a730_zap.b02 \
-    vendor/lenovo/sm8475-common/proprietary/vendor/firmware/a730_zap.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/a730_zap.elf \
-    vendor/lenovo/sm8475-common/proprietary/vendor/firmware/a730_zap.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/a730_zap.mbn \
-    vendor/lenovo/sm8475-common/proprietary/vendor/firmware/a730_zap.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/a730_zap.mdt \
-    vendor/lenovo/sm8475-common/proprietary/vendor/firmware/evass-lt-21.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt-21.b00 \
-    vendor/lenovo/sm8475-common/proprietary/vendor/firmware/evass-lt-21.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt-21.b01 \
-    vendor/lenovo/sm8475-common/proprietary/vendor/firmware/evass-lt-21.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt-21.b02 \
-    vendor/lenovo/sm8475-common/proprietary/vendor/firmware/evass-lt-21.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt-21.b03 \
-    vendor/lenovo/sm8475-common/proprietary/vendor/firmware/evass-lt-21.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt-21.b04 \
-    vendor/lenovo/sm8475-common/proprietary/vendor/firmware/evass-lt-21.b05:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt-21.b05 \
-    vendor/lenovo/sm8475-common/proprietary/vendor/firmware/evass-lt-21.b06:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt-21.b06 \
-    vendor/lenovo/sm8475-common/proprietary/vendor/firmware/evass-lt-21.b07:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt-21.b07 \
-    vendor/lenovo/sm8475-common/proprietary/vendor/firmware/evass-lt-21.b08:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt-21.b08 \
-    vendor/lenovo/sm8475-common/proprietary/vendor/firmware/evass-lt-21.b09:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt-21.b09 \
-    vendor/lenovo/sm8475-common/proprietary/vendor/firmware/evass-lt-21.b10:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt-21.b10 \
-    vendor/lenovo/sm8475-common/proprietary/vendor/firmware/evass-lt-21.b11:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt-21.b11 \
-    vendor/lenovo/sm8475-common/proprietary/vendor/firmware/evass-lt-21.b12:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt-21.b12 \
-    vendor/lenovo/sm8475-common/proprietary/vendor/firmware/evass-lt-21.b13:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt-21.b13 \
-    vendor/lenovo/sm8475-common/proprietary/vendor/firmware/evass-lt-21.b14:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt-21.b14 \
-    vendor/lenovo/sm8475-common/proprietary/vendor/firmware/evass-lt-21.b15:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt-21.b15 \
-    vendor/lenovo/sm8475-common/proprietary/vendor/firmware/evass-lt-21.b16:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt-21.b16 \
-    vendor/lenovo/sm8475-common/proprietary/vendor/firmware/evass-lt-21.b17:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt-21.b17 \
-    vendor/lenovo/sm8475-common/proprietary/vendor/firmware/evass-lt-21.b18:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt-21.b18 \
-    vendor/lenovo/sm8475-common/proprietary/vendor/firmware/evass-lt-21.b19:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt-21.b19 \
-    vendor/lenovo/sm8475-common/proprietary/vendor/firmware/evass-lt-21.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt-21.mbn \
-    vendor/lenovo/sm8475-common/proprietary/vendor/firmware/evass-lt-21.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt-21.mdt \
-    vendor/lenovo/sm8475-common/proprietary/vendor/firmware/evass.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b00 \
-    vendor/lenovo/sm8475-common/proprietary/vendor/firmware/evass.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b01 \
-    vendor/lenovo/sm8475-common/proprietary/vendor/firmware/evass.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b02 \
-    vendor/lenovo/sm8475-common/proprietary/vendor/firmware/evass.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b03 \
-    vendor/lenovo/sm8475-common/proprietary/vendor/firmware/evass.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b04 \
-    vendor/lenovo/sm8475-common/proprietary/vendor/firmware/evass.b05:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b05 \
-    vendor/lenovo/sm8475-common/proprietary/vendor/firmware/evass.b06:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b06 \
-    vendor/lenovo/sm8475-common/proprietary/vendor/firmware/evass.b07:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b07 \
-    vendor/lenovo/sm8475-common/proprietary/vendor/firmware/evass.b08:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b08 \
-    vendor/lenovo/sm8475-common/proprietary/vendor/firmware/evass.b09:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b09 \
-    vendor/lenovo/sm8475-common/proprietary/vendor/firmware/evass.b10:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b10 \
-    vendor/lenovo/sm8475-common/proprietary/vendor/firmware/evass.b11:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b11 \
-    vendor/lenovo/sm8475-common/proprietary/vendor/firmware/evass.b12:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b12 \
-    vendor/lenovo/sm8475-common/proprietary/vendor/firmware/evass.b13:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b13 \
-    vendor/lenovo/sm8475-common/proprietary/vendor/firmware/evass.b14:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b14 \
-    vendor/lenovo/sm8475-common/proprietary/vendor/firmware/evass.b15:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b15 \
-    vendor/lenovo/sm8475-common/proprietary/vendor/firmware/evass.b16:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b16 \
-    vendor/lenovo/sm8475-common/proprietary/vendor/firmware/evass.b17:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b17 \
-    vendor/lenovo/sm8475-common/proprietary/vendor/firmware/evass.b18:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b18 \
-    vendor/lenovo/sm8475-common/proprietary/vendor/firmware/evass.b19:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b19 \
-    vendor/lenovo/sm8475-common/proprietary/vendor/firmware/evass.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.mbn \
-    vendor/lenovo/sm8475-common/proprietary/vendor/firmware/evass.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.mdt \
-    vendor/lenovo/sm8475-common/proprietary/vendor/firmware/gmu_gen70000.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gmu_gen70000.bin \
     vendor/lenovo/sm8475-common/proprietary/vendor/firmware/vpu20_1v.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_1v.mbn \
     vendor/lenovo/sm8475-common/proprietary/vendor/firmware/vpu20_1v_unsigned.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_1v_unsigned.mbn \
     vendor/lenovo/sm8475-common/proprietary/vendor/firmware/vpu20_4v.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.mbn \
@@ -256,6 +201,7 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/sm8475-common/proprietary/vendor/gpu/kbc/unified_ksqs.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_ksqs.bin
 
 PRODUCT_PACKAGES += \
+    vendor.qti.diaghal-V1-ndk \
     eglSubDriverAndroid \
     libEGL_adreno \
     libGLESv1_CM_adreno \
@@ -529,13 +475,10 @@ PRODUCT_PACKAGES += \
     libscveObjectSegmentation \
     libscveObjectTracker \
     libscveObjectTracker_stub \
-    libsdedrm \
     libsdm-color \
     libsdm-colormgr-algo \
     libsdm-disp-vndapis \
-    libsdmcore \
     libsdmextension \
-    libsdmutils \
     libsdsprpc \
     libsecureui_svcsock \
     libsensor_calibration \
@@ -766,8 +709,7 @@ PRODUCT_PACKAGES += \
     lib-imsvtextutils \
     lib-imsvtutils \
     libdiag_system \
-    libimscamera_jni \
-    libimsmedia_jni \
+    vendor.qti.ImsRtpService-V1-ndk \
     vendor.qti.diaghal@1.0 \
     vendor.qti.imsrtpservice@3.0 \
     vendor.qti.imsrtpservice@3.1 \
@@ -819,7 +761,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.esepowermanager@1.1-service \
     vendor.qti.hardware.alarm@1.0-service \
     vendor.qti.hardware.capabilityconfigstore@1.0-service \
-    vendor.qti.hardware.display.composer-service \
     vendor.qti.hardware.factory@1.0-service \
     vendor.qti.hardware.iop@2.0-service \
     vendor.qti.hardware.limits@1.1-service \
@@ -835,7 +776,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.media.c2audio@1.0-service \
     ims_rtp_daemon \
     imsdaemon \
-    init.class_main \
     init.kernel.post_boot-cape \
     init.kernel.post_boot-taro \
     init.kernel.post_boot \
@@ -891,8 +831,6 @@ PRODUCT_PACKAGES += \
     wifidisplayhalservice
 
 PRODUCT_PACKAGES += \
-    system_ext_priv-app_ims_lib_arm64_libimscamera_jni_so \
-    system_ext_priv-app_ims_lib_arm64_libimsmedia_jni_so \
     vendor_lib_libEGL_adreno_so \
     vendor_lib_libGLESv2_adreno_so \
     vendor_lib_libq3dtools_adreno_so \
