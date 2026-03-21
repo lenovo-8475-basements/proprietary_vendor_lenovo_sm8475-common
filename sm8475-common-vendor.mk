@@ -702,7 +702,6 @@ PRODUCT_PACKAGES += \
     init.kernel.post_boot \
     init.qcom.class_core \
     init.qcom.early_boot \
-    init.qcom.post_boot \
     init.qcom.sensors \
     init.qcom \
     init.qti.kernel \
