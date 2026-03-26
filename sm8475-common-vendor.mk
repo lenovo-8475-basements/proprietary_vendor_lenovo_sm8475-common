@@ -250,6 +250,7 @@ PRODUCT_PACKAGES += \
     libTrustedUI \
     libTrustedUITZ \
     libTrustedUIVM \
+    libaacvibrator \
     libadsp_default_listener \
     libadsprpc \
     libasn1cper \
