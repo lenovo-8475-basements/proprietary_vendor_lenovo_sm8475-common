@@ -14571,12 +14571,14 @@ android_app_import {
     soc_specific: true,
 }
 
-dex_import {
-    name: "vendor.qti.hardware.alarm-V1.0-java",
+android_app_import {
+    name: "PowerOffAlarm",
     owner: "lenovo",
-    jars: [
-        "proprietary/system_ext/framework/vendor.qti.hardware.alarm-V1.0-java.jar",
-    ],
+    apk: "proprietary/system_ext/app/PowerOffAlarm/PowerOffAlarm.apk",
+    certificate: "platform",
+    dex_preopt: {
+        enabled: false,
+    },
     system_ext_specific: true,
 }
 
@@ -16376,32 +16378,6 @@ cc_prebuilt_binary {
                 "libdsutils",
                 "libc++",
                 "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "power_off_alarm",
-    owner: "lenovo",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/power_off_alarm",
-            ],
-            shared_libs: [
-                "libc",
-                "liblog",
-                "libcutils",
-                "libc++",
                 "libm",
                 "libdl",
             ],

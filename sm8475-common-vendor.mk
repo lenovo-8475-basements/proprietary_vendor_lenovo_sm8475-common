@@ -644,7 +644,7 @@ PRODUCT_PACKAGES += \
     CneApp \
     IWlanService \
     TimeService \
-    vendor.qti.hardware.alarm-V1.0-java \
+    PowerOffAlarm \
     vendor.qti.ims.connection-V1.0-java \
     vendor.qti.ims.factory-V2.0-java \
     vendor.qti.ims.factory-V2.1-java \
@@ -721,7 +721,6 @@ PRODUCT_PACKAGES += \
     pm-proxy \
     pm-service \
     port-bridge \
-    power_off_alarm \
     ppd \
     qdcmss \
     qmipriod \
