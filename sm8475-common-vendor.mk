@@ -50,17 +50,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/sm8475-common/proprietary/vendor/etc/data/dsi_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/dsi_config.xml \
     vendor/lenovo/sm8475-common/proprietary/vendor/etc/data/netmgr_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/netmgr_config.xml \
     vendor/lenovo/sm8475-common/proprietary/vendor/etc/default-permissions/com.qualcomm.qti.cne.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default-permissions/com.qualcomm.qti.cne.xml \
-    vendor/lenovo/sm8475-common/proprietary/vendor/etc/display/DPU660.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU660.xml \
-    vendor/lenovo/sm8475-common/proprietary/vendor/etc/display/DPU670.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU670.xml \
-    vendor/lenovo/sm8475-common/proprietary/vendor/etc/display/DPU720.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU720.xml \
-    vendor/lenovo/sm8475-common/proprietary/vendor/etc/display/DPU7__.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU7__.xml \
-    vendor/lenovo/sm8475-common/proprietary/vendor/etc/display/DPU820.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU820.xml \
-    vendor/lenovo/sm8475-common/proprietary/vendor/etc/display/DPU830.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU830.xml \
-    vendor/lenovo/sm8475-common/proprietary/vendor/etc/display/DPU860.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU860.xml \
-    vendor/lenovo/sm8475-common/proprietary/vendor/etc/display/DPU8__.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU8__.xml \
-    vendor/lenovo/sm8475-common/proprietary/vendor/etc/display/DPU9__.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU9__.xml \
-    vendor/lenovo/sm8475-common/proprietary/vendor/etc/display/advanced_sf_offsets.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/advanced_sf_offsets.xml \
-    vendor/lenovo/sm8475-common/proprietary/vendor/etc/display/thermallevel_to_fps.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/thermallevel_to_fps.xml \
     vendor/lenovo/sm8475-common/proprietary/vendor/etc/dpm_vndr/vendor.dpm.conf:$(TARGET_COPY_OUT_VENDOR)/etc/dpm_vndr/vendor.dpm.conf \
     vendor/lenovo/sm8475-common/proprietary/vendor/etc/eva/facedetection/model3.dat:$(TARGET_COPY_OUT_VENDOR)/etc/eva/facedetection/model3.dat \
     vendor/lenovo/sm8475-common/proprietary/vendor/etc/gpfspath_oem_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gpfspath_oem_config.xml \
@@ -91,13 +80,11 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/sm8475-common/proprietary/vendor/etc/init/netmgrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/netmgrd.rc \
     vendor/lenovo/sm8475-common/proprietary/vendor/etc/init/port-bridge.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/port-bridge.rc \
     vendor/lenovo/sm8475-common/proprietary/vendor/etc/init/qconfig.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qconfig.rc \
-    vendor/lenovo/sm8475-common/proprietary/vendor/etc/init/qdcmss.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qdcmss.rc \
     vendor/lenovo/sm8475-common/proprietary/vendor/etc/init/qmipriod.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qmipriod.rc \
     vendor/lenovo/sm8475-common/proprietary/vendor/etc/init/qseecomd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qseecomd.rc \
     vendor/lenovo/sm8475-common/proprietary/vendor/etc/init/shsusrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/shsusrd.rc \
     vendor/lenovo/sm8475-common/proprietary/vendor/etc/init/ssgtzd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ssgtzd.rc \
     vendor/lenovo/sm8475-common/proprietary/vendor/etc/init/trusteduilistener.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/trusteduilistener.rc \
-    vendor/lenovo/sm8475-common/proprietary/vendor/etc/init/vendor.display.color@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.display.color@1.0-service.rc \
     vendor/lenovo/sm8475-common/proprietary/vendor/etc/init/vendor.dpmd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dpmd.rc \
     vendor/lenovo/sm8475-common/proprietary/vendor/etc/init/vendor.qti.adsprpc-guestos-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.adsprpc-guestos-service.rc \
     vendor/lenovo/sm8475-common/proprietary/vendor/etc/init/vendor.qti.cdsprpc-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.cdsprpc-service.rc \
@@ -255,7 +242,6 @@ PRODUCT_PACKAGES += \
     libasn1cper \
     libasn1crt \
     libasn1crtx \
-    libbacklight-calib \
     libbluetooth_audio_session_qti \
     libbluetooth_audio_session_qti_2_1 \
     libbt-hidlclient \
@@ -279,12 +265,7 @@ PRODUCT_PACKAGES += \
     libcvpcpuRev_skel \
     libdiag \
     libdiagjni \
-    libdigital-dimming \
-    libdisp-aba \
-    libdisplayqos \
-    libdisplayskuutils \
     libdpmqmihal \
-    libdpps \
     libdrmfs \
     libdrmtime \
     libdsd2pcm \
@@ -299,10 +280,7 @@ PRODUCT_PACKAGES += \
     libeva_util \
     libfastcvdsp_stub \
     libfastcvopt \
-    libgame_enhance \
     libgps.utils \
-    libhdr_backlight_adapter \
-    libhdr_tm \
     libidl \
     libjnihelper \
     libkeymasterdeviceutils \
@@ -319,7 +297,6 @@ PRODUCT_PACKAGES += \
     libmdmdetect \
     libmdmimgload \
     libmdsprpc \
-    libmemutils \
     libminkdescriptor \
     libminksocket_vendor \
     libmmosal_vendor \
@@ -377,9 +354,6 @@ PRODUCT_PACKAGES += \
     libqcrildataaidl \
     libqcrildatactl \
     libqcrildataqos \
-    libqdcm-algo \
-    libqdcm-json-mode-parser \
-    libqdcm-mode-parser \
     libqdi \
     libqdma_file_agent \
     libqdp \
@@ -399,22 +373,16 @@ PRODUCT_PACKAGES += \
     libqmiservices \
     libqppe \
     libqrtr \
-    libqseed3 \
     libqsocket \
     libqtikeymaster4 \
     libqtikeymint \
     librcc \
-    librcmask \
     librpmb \
     libscveCommon \
     libscveCommon_stub \
     libscveObjectSegmentation \
     libscveObjectTracker \
     libscveObjectTracker_stub \
-    libsdm-color \
-    libsdm-colormgr-algo \
-    libsdm-disp-vndapis \
-    libsdmextension \
     libsdsprpc \
     libsecureui_svcsock \
     libsensor_calibration \
@@ -424,8 +392,6 @@ PRODUCT_PACKAGES += \
     libshsusr_verinfo \
     libsi \
     libsmemlog \
-    libsnapdragoncolor-manager \
-    libsnapdragoncolor-qdcm \
     libsns_api \
     libsns_device_mode_stub \
     libsns_direct_channel_stub \
@@ -443,10 +409,8 @@ PRODUCT_PACKAGES += \
     libsys_info_cache \
     libsysmon_cdsp_skel \
     libsystem_health_mon \
-    libtestutils \
     libthermalclient \
     libtime_genoff \
-    libtinyxml2_1 \
     libtrustedapploader \
     libtzdrmgenprov \
     libvideotxr \
@@ -489,15 +453,6 @@ PRODUCT_PACKAGES += \
     qtiril-utils \
     sensors.ssc \
     libasphere \
-    vendor.display.color@1.0 \
-    vendor.display.color@1.1 \
-    vendor.display.color@1.2 \
-    vendor.display.color@1.3 \
-    vendor.display.color@1.4 \
-    vendor.display.color@1.5 \
-    vendor.display.color@1.6 \
-    vendor.display.color@1.7 \
-    vendor.display.postproc@1.0 \
     vendor.libdpmctmgr \
     vendor.libdpmfdmgr \
     vendor.libdpmframework \
@@ -677,7 +632,6 @@ PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.1-service-qti \
     android.hardware.security.keymint-service-qti \
     qconfigservice \
-    vendor.display.color@1.0-service \
     vendor.qti.esepowermanager@1.1-service \
     vendor.qti.hardware.alarm@1.0-service \
     vendor.qti.hardware.capabilityconfigstore@1.0-service \
@@ -717,8 +671,6 @@ PRODUCT_PACKAGES += \
     pm-proxy \
     pm-service \
     port-bridge \
-    ppd \
-    qdcmss \
     qmipriod \
     qrtr-cfg \
     qrtr-lookup \
